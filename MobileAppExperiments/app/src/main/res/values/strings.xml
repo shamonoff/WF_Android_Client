@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobileAppExperiments</string>
+    <string name="title_activity_tab_list">TabListActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wordorders">WordordersActivity</string>
+    <string name="title_activity_accounts">AccountsActivity</string>
+    <string name="title_activity_workorder_details">WorkorderDetails</string>
+    <string name="title_activity_workorder_add">WorkorderAdd</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string-array name="statuses_array">
+         <item>Open</item>
+        <item>Scheduled</item>
+        <item>On-Site</item>
+        <item>Completed</item>
+        <item>Cancelled</item>
+        <item>Dispatched</item>
+        <item>Tentative</item>
+    </string-array>
+</resources>

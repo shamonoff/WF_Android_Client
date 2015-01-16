@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jbulavincev.mobileappexperiments.trash.WorkorderAdd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Workorder"
+        android:id="@+id/textViewInAddActivity"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="WOId"
+        android:ems="10"
+        android:id="@+id/idField"
+        android:layout_below="@+id/textViewInAddActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Worker name"
+        android:ems="10"
+        android:id="@+id/workerField"
+        android:layout_below="@+id/idField"
+        android:layout_alignLeft="@+id/idField"
+        android:layout_alignStart="@+id/idField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Date"
+        android:ems="10"
+        android:id="@+id/dateField"
+        android:layout_below="@+id/workerField"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add WO"
+        android:id="@+id/addButton"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="38.0"
+        android:ems="10"
+        android:id="@+id/latField"
+        android:layout_below="@+id/dateField"
+        android:layout_alignRight="@+id/dateField"
+        android:layout_alignEnd="@+id/dateField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="40.0"
+        android:ems="10"
+        android:id="@+id/longField"
+        android:layout_below="@+id/latField"
+        android:layout_alignLeft="@+id/latField"
+        android:layout_alignStart="@+id/latField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusField"
+        android:layout_below="@+id/longField"
+        android:layout_alignLeft="@+id/longField"
+        android:layout_alignStart="@+id/longField"
+        android:layout_alignRight="@+id/longField"
+        android:layout_alignEnd="@+id/longField"
+        android:text="In Progress" />
+
+</RelativeLayout>

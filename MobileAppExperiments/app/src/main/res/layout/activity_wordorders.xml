@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/tab"
+    tools:context="com.example.jbulavincev.mobileappexperiments.WorkordersActivity">
+
+    <TextView android:text="Workorders" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:longClickable="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:paddingTop="50dp"
+        android:paddingBottom="80dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addWOButton"
+        android:layout_marginBottom="24dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_alignBottom="@+id/listView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshButton"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:layout_alignTop="@+id/addWOButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relogin"
+        android:id="@+id/reloginButton"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/refreshButton"
+        android:layout_toRightOf="@+id/refreshButton"
+        android:layout_toEndOf="@+id/refreshButton" />
+
+</RelativeLayout>
